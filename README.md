@@ -1,2 +1,3 @@
 # pwe_2020.2_marialidijane
-Aluna 
+Repositórios para a disciplina de programação web da Ufersa ANGICOS/RN
+
