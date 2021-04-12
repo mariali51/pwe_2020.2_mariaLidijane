@@ -24,26 +24,26 @@
         </div>
      </nav>
 
-      <form method="POST" th:object="${pessoa}" th:action="@{/adicionarPessoa}" >
+      <form method="POST" th:object="${pessoa}" th:action="@{/adicionarPessoa}">
       
         <h3 style="padding: 10px 0 20px 0;"> formulário para cadastro de pessoas:</h3>
           <div class="margin-top:20px;">
           <div class="row">
             <div class="input-field col m6 s12">
-              <input placeholder="Seu nome completo aqui" th:field="*{nome}"
+              <input placeholder="Seu nome completo aqui" th:field="*{nome}">
               <label for="name">Nome Completo</label>
             </div>
           </div>
       </div>
-      <div class="row"
+      <div class="row">
           <div class="row">
             <div class="input-field col m6 s12">
-              <input placeholder="dd/mmm/aaa" th:field="*{dataNascimento}"
+              <input type="date" placeholder="dd/mmm/aaaa" th:field="*{dataNascimento}">
               <label for="date">Data Nascimento</label>
             </div>
           </div>
       </div>
-      <div class="row"
+      <div class="row">
           <div class="row">
             <div class="input-field col m6 s12">
               <input placeholder="nome@dominio.com" th:field="*{email}" id="email" type="text" class="validate">
@@ -56,19 +56,19 @@
 
             <p>
               <label>
-                <input name="sexo" type="radio" th:field="*{genero}" valume="Masculino" />       
+                <input name="sexo" type="radio" th:field="*{genero}" value="Masculino" />       
                 <span>Masculino</span>
               </label>
             </p>
             <p>
               <label>
-                <input name="sexo" type="radio" th:field="*{genero}" valume="Feminino" />
+                <input name="sexo" type="radio" th:field="*{genero}" value="Feminino" />
                 <span>Feminino</span>
               </label>
             </p>
             <p>
               <label>
-                <input nome= "sexo"  type="radio"  th:field="*{genero}" valume="Não informado" />
+                <input nome= "sexo"  type="radio"  th:field="*{genero}" value="Não informado" />
                 <span>Não informado</span>
               </label>
             </p>
@@ -81,3 +81,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
+
