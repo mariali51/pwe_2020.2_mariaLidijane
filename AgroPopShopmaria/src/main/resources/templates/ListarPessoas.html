@@ -1,0 +1,62 @@
+<! DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta nome="viewport" conteúdo="largura=largura do dispositivo, escala inicial=1,0">
+    <meta codigoSecreto= "1880333856">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" th:href="@{style/style.css}">
+    <título>Site exercício 2 unidade</título>
+</head>
+<body>
+  <classe div ="container">
+
+    <Nav>
+        <classe div ="nav-wrapper darkBlue">
+          < a href="/" class="brand-logo"&iniciar;</a>
+          <ul id="nav-mobile" class="direito hide-on-med-and-down">
+            <li><a href ="public/noticias.html">Canais de noticias</a></li>
+            <li><a href="/CadastarPessoas">Adicionar Pessoa</a></li>
+            <li><a href="/ListarPessoas">Listar pessoas</a></li>
+            <li><a href ="public/sobre.html">Sobre o Site</a></li>
+            <li><a href ="public/contato.html">Mande um e-mail pra mim</a></li>
+          </Ul>
+        </Div>
+      </Nav>
+      
+      <h4 estilo="text-align: center; estofamento: 8px 0 20px 0;" > Lista de Cliente Cadastradas</h4>
+      <table>
+        <thead>
+          <Tr>
+              <th>ID</th>
+              <th>Nome Completo</th>
+              <th>Data de Nascimento</th>
+              <th>E-mail</th>
+              <th>Sexo</th>
+              <th>Editar</th>
+              <th>Removedor</th>
+          </Tr>
+        </thead>
+
+        <tbody>
+          <tr th:each="cliente: ${cliente}">
+          
+            <td th:text="${cliente.id}"></td>
+            <td th:text="${cliente.nome}"></td>
+            <td th:text="${#temporals.format (pessoa.dataNascimento,'dd/MM/yyyy'}}"></td>
+            <td><a href="malito:jose@outro.com" th:text="${cliente.email}"></a></td>
+            <td th:text="${cliente.genero}"></td>
+            <td><a th:href="@{/editar/{id}(id=${cliente.id}}}">Editar</a></td>
+            <td><a th:href="@{/removedor/{id}(id=${cliente.id}}}">Removedor</a><td>
+            
+          </Tr>
+          
+        </tbody>
+      </table>
+            
+    </Div> 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

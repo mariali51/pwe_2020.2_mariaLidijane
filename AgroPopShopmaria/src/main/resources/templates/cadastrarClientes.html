@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta codigo="1880333856">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Site exercicio 2 unidade</title>
+</head>
+<body>
+<nav>
+			<ul>
+				<li><a href="">HOME</a></li>
+				<li><a href="">NOTÍCIAS</a></li>
+				<li><a href="">ADICIONAR PESSOAS</a></li>
+				<li><a href="">LISTA DE PESSOAS</a></li>
+				<li><a href="">SOBRE</a></li>
+				<li><a href="">E-MAIL</a></li>
+			</ul>
+		</nav>
+	<strong>Registre-se</strong>
+
+						<!--entradas-->
+
+						    <form method="POST">
+						    
+							<input type="text" placeholder="Nome Completo" name="nome" required>
+
+							<input type="text" placeholder="RG 000.0000" required>
+
+							<input type="email" placeholder="Exemplo@gmail.com" name="email" required>
+
+							<input type="password" placeholder="Senha" name="senha" required>
+
+							<input type="text" class="form-control cep-mask" placeholder="CEP: 00000-000" required>
+
+							<input type="text" placeholder="Endereço" name="endereco" required>
+							<label for="uf" required>Estado</label>
+								<select id="uf">
+
+							<option disabled="disabled" selected="selected"><strong>Selecione uma opção</option></strong>
+							<option value="AC">Acre</option>
+										<option value="AL">Alagoas</option>
+										<option value="AP">Amapá</option>
+										<option value="AM">Amazonas</option>
+										<option value="BA">Bahia</option>
+										<option value="CE">Ceará</option>
+										<option value="DF">Distrito Federal</option>
+										<option value="ES">Espírito Santo</option>
+										<option value="GO">Goiás</option>
+										<option value="MA">Maranhão</option>
+										</select>
+										<label for="genero" required>Genêro</label>
+									<select id="genero">
+										<option disabled="disabled" selected="selected"><strong>Selecione uma opção</option></strong>
+											<option value="Mas">Masculino</option>
+											<option value="Mas">Feminino</option>
+
+									</select>
+									<input type="submite" name="botao" value="registrar">
+									
+</body>
+</html>
