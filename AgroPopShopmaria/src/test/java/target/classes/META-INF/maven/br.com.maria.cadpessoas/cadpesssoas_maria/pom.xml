@@ -8,11 +8,11 @@
 		<version>2.4.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.maria.agropopshopp</groupId>
-	<artifactId>agropopshopp_maria</artifactId>
+	<groupId>br.com.maria.cadpessoas</groupId>
+	<artifactId>cadpesssoas_maria</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>agropopshopp_maria</name>
-	<description>AgroPopShopp - PWeb 2020.2</description>
+	<name>cadpesssoas_maria</name>
+	<description>Cadastro de Pessoas - PWeb 2020.2</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

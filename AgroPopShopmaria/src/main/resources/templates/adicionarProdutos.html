@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta codigoSecreto="1897357766">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" th:href="@{style/style.css}">
+    <title>site3</title>
+</head>
+<body>
+<div classe="container">
+   <nav>
+     <div class="nav-wrapper brown">
+          <a href="/" class="brand-logo">iniciar</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="public/noticias.html">Canais de noticias</a></li>
+            <li><a href="/adicionarClientes">Adicionar Clientes</a></li>
+            <li><a href="/listarClientes">Listar Clientes</a></li>
+            <li><a href="/adicionarProdutos">Adicionar Produtos</a></li>
+             <li><a href="/listarProdutos">Listar Produtos</a></li>
+            <li><a href="public/sobre.html">Sobre o site</a></li>
+            <li><a href="public/contato.html">Mande um e-mail</a></li>
+          </ul>
+        </div>
+     </nav>
+
+      <form method="POST" th:object="${produto}" th:action="@{adicionarProdutos}">
+      
+        <h3 style="padding: 10px 0 20px 0;"> formulário para cadastro de Produtos:</h3>
+          <div class="margin-top:20px;">
+          <div class="row">
+            <div class="input-field col m6 s12">
+              <input placeholder="nome do produto" th:field="*{nome}" type="text">
+              <label for="name">Nome do Produto</label>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="row">
+            <div class="input-field col m6 s12">
+              <input type="text" placeholder="marca" th:field="*{marca}">
+              <label for="marca">Marca</label>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="row">
+            <div class="input-field col m6 s12">
+              <input placeholder="preço" th:field="*{preco}" id="preco" type="number" class="validate">
+              <label for="preco">Preço</label>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="row">
+            <div class="input-field col m6 s12">
+              <input placeholder="peso" th:field="*{peso}" id="peso" type="number" class="validate">
+              <label for="peso">Peso</label>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="row">
+            <div class="input-field col m6 s12">
+              <input placeholder="altura" th:field="*{altura}" id="altura" type="number" class="validate">
+              <label for="altura">Altura</label>
+            </div>
+          </div>
+      </div>
+       <div class="row">
+          <div class="row">
+            <div class="input-field col m6 s12">
+              <input placeholder="largura" th:field="*{largura}" id="largura" type="number" class="validate">
+              <label for="largura">Largura</label>
+            </div>
+          </div>
+      </div>
+        <div class="row">
+          <div class="row">
+            <div class="input-field col m6 s12">
+              <input placeholder="profundidade" th:field="*{profundidade}" id="profundidade" type="number" class="validate">
+              <label for="profundidade">Profundidade</label>
+            </div>
+          </div>
+      </div>
+        
+        <button class="btn waves-effect waves-light" type="reset"style="margin: 10px 5px">Limpar</button>
+            
+        <button class="btn waves-effect waves-light" type="submit">Cadastrar</button>
+
+        <form>
+            
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+
